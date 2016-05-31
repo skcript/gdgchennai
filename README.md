@@ -2,10 +2,9 @@
 
 The official website of Google Developers Group Chennai
 
-### Contributing Guidelines
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this repo
-2. [Clone] (https://help.github.com/articles/cloning-a-repository/) your newly forked repo
-3. Raise pull requests to [skcript/GDGChennai](https://github.com/skcript/gdgchennai)
+### Contributing
+
+Before sending a Pull Request, be sure to review the [Contributing Guidelines](CONTRIBUTING.md) first.
 
 ### Setting up Developer Environment
 1. "cd" into the directory `cd gdgchennai`
