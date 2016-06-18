@@ -1,5 +1,5 @@
+![alt text][logo]
 # GDG Chennai
-
 [logo]: /images/logo-name.png "GDG Chennai Logo"
 
 The official website of Google Developers Group Chennai
