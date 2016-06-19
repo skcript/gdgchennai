@@ -2,7 +2,7 @@
 # GDG Chennai
 [logo]: /images/logo-name.png "GDG Chennai Logo"
 
-The official website of Google Developers Group Chennai
+The official website of Google Developers Group Chennai.
 More about Google Developer Groups [here](https://developers.google.com/groups/).
 
 ### Contributing Guidelines

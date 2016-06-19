@@ -4,17 +4,53 @@
   {% include head.html %}
 
   <body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+    .mdl-layout__header {
+      background: white;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: #ddd;
+    }
+    </style>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--waterfall" >
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">{{ site.title }}</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only" itemscope itemprop='http://schema.org/SiteNavigationElement'>
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/about" >About</a>
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/portfolio" >Portfolio</a> 
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/post" >Articles</a>
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/profiles" >Profiles</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <span class="mdl-layout-title">{{ site.title }}</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
       </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+        {{ content }}
+        </div>
+        <!--Footer-->
+        {% include footer.html %}
+      </main>
     </div>
-
-    {% include footer.html %}
-
+    <script src="/js/material.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
   </body>
-
 </html>
