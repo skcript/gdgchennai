@@ -1,27 +1,12 @@
 <!DOCTYPE html>
-<html>
-
+<html itempscope itemprop='http://schema.org/WebPage'>
   {% include head.html %}
-
   <body>
-    <!-- Uses a transparent header that draws on top of the layout's background -->
-    <style>
-    .mdl-layout__header {
-      background: white;
-    }
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {
-      /* This background is dark, so we set text to white. Use 87% black instead if
-         your background is light. */
-      color: #ddd;
-    }
-    </style>
-
     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-      <header class="mdl-layout__header mdl-layout__header--waterfall" >
+      <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall" >
         <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">{{ site.title }}</span>
+          <!-- Icon -->
+          <span class="mdl-layout-icon"><img src="/images/logo-name.png" style="width: 200px;" ></span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
@@ -34,7 +19,7 @@
         </div>
       </header>
       <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-        <span class="mdl-layout-title">{{ site.title }}</span>
+        <span class="mdl-layout-title"><img src="/images/logo-name.png" style="width: 200px;"></span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Link</a>
           <a class="mdl-navigation__link" href="">Link</a>
@@ -42,14 +27,39 @@
           <a class="mdl-navigation__link" href="">Link</a>
         </nav>
       </div>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-        {{ content }}
+      <!--Banner-->
+      <div class="banner" style="display: none; min-height: 400px;">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+        <div class="slide slide4"></div>
+        <div class="pagination">
+          <ul>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+          </ul>
         </div>
+      </div>
+      <main class="mdl-layout__content">
+        
+        {{ content }}
+        
         <!--Footer-->
         {% include footer.html %}
       </main>
     </div>
+
+    <style>
+    .mdl-layout__header {
+      background: white;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      color: #ddd;
+    }
+    </style>
     <script src="/js/material.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>

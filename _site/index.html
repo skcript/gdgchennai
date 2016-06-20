@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html itempscope itemprop='http://schema.org/WebPage'>
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,26 +21,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
 </head>
 
-
   <body>
-    <!-- Uses a transparent header that draws on top of the layout's background -->
-    <style>
-    .mdl-layout__header {
-      background: white;
-    }
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {
-      /* This background is dark, so we set text to white. Use 87% black instead if
-         your background is light. */
-      color: #ddd;
-    }
-    </style>
-
     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-      <header class="mdl-layout__header mdl-layout__header--waterfall" >
+      <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall" >
         <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">GDG Chennai</span>
+          <!-- Icon -->
+          <span class="mdl-layout-icon"><img src="/images/logo-name.png" style="width: 200px;" ></span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
@@ -54,7 +39,7 @@
         </div>
       </header>
       <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-        <span class="mdl-layout-title">GDG Chennai</span>
+        <span class="mdl-layout-title"><img src="/images/logo-name.png" style="width: 200px;"></span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="">Link</a>
           <a class="mdl-navigation__link" href="">Link</a>
@@ -62,103 +47,115 @@
           <a class="mdl-navigation__link" href="">Link</a>
         </nav>
       </div>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-        <div class="home">
-  <div class="mdl-grid--no-spacing">
-    <div class="mdl-cell mdl-cell--12-col">
-      <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone" style="background: url('/images/wtm01.jpg') center / cover;"> 
-          <div class="triangle"></div>
+      <!--Banner-->
+      <div class="banner" style="display: none; min-height: 400px;">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+        <div class="slide slide4"></div>
+        <div class="pagination">
+          <ul>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+          </ul>
         </div>
-        <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+      </div>
+      <main class="mdl-layout__content">
+        
+          <div class="main-grid mdl-grid mdl-grid--no-spacing">
+    <div class="row1 mdl-grid--no-spacing">
+      <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+        <div>
+          <span class="mdl-typography--display-1">Let's Build Together</span>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone " style="background: url('/images/slide-1.jpg') center / cover ;">
+        <div>
+        </div>
+      </div>
+    </div>  
+    <div class="row2 mdl-grid--no-spacing">
+      <div class="mdl-cell--12-col">
+        <div class="mdl-typography--headline-color-contrast row-head">Events</div>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <div class="home-card mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title mdl-card--expand">
+            <h4>
+              Featured event:<br>
+              May 24, 2016<br>
+              7-11pm
+            </h4>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Add to Calendar
+            </a>
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">event</i>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <div class="home-card mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title mdl-card--expand">
+            <h4>
+              Featured event:<br>
+              May 24, 2016<br>
+              7-11pm
+            </h4>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Add to Calendar
+            </a>
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">event</i>
+          </div>
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <div class="home-card mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title mdl-card--expand">
+            <h4>
+              Featured event:<br>
+              May 24, 2016<br>
+              7-11pm
+            </h4>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Add to Calendar
+            </a>
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">event</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row3 mdl-grid--no-spacing">
+        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url('/images/wtm01.jpg') center / cover;"> 
+          <div class="triangle mdl-layout--large-screen-only"></div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
           <h3>Women Tech Makers</h3>
           <p>Are you a women developer seeking refuge in a tech community? We're right here for you.</p>
           <p>GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?</p>
         </div>
-      </div>
     </div>
-    <div class="mdl-cell mdl-cell--12-col">
-      <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--4-col">
-        <div class="demo-card-event mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand">
-            <h4>
-              Featured event:<br>
-              May 24, 2016<br>
-              7-11pm
-            </h4>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              Add to Calendar
-            </a>
-            <div class="mdl-layout-spacer"></div>
-            <i class="material-icons">event</i>
-          </div>
+    <div class="row4 mdl-grid--no-spacing">
+        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+          <h3>Women Tech Makers</h3>
+          <p>Are you a women developer seeking refuge in a tech community? We're right here for you.</p>
+          <p>GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?</p>
         </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col">
-        <div class="demo-card-event mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand">
-            <h4>
-              Featured event:<br>
-              May 24, 2016<br>
-              7-11pm
-            </h4>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              Add to Calendar
-            </a>
-            <div class="mdl-layout-spacer"></div>
-            <i class="material-icons">event</i>
-          </div>
+        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url('/images/wtm01.jpg') center / cover;"> 
+          <div class="triangle mdl-layout--large-screen-only" style="-webkit-transform: rotate(180deg); float: left;"></div>
         </div>
-      </div>
-      <div class="mdl-cell mdl-cell--4-col">
-        <div class="demo-card-event mdl-card mdl-shadow--2dp">
-          <div class="mdl-card__title mdl-card--expand">
-            <h4>
-              Featured event:<br>
-              May 24, 2016<br>
-              7-11pm
-            </h4>
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-              Add to Calendar
-            </a>
-            <div class="mdl-layout-spacer"></div>
-            <i class="material-icons">event</i>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="mdl-cell mdl-cell--12-col">
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone" style="background: url('/images/wtm01.jpg') center / cover;"> 
-        <div class="triangle"></div>
-      </div>
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
-        <h3>Women Tech Makers</h3>
-        <p>Are you a women developer seeking refuge in a tech community? We're right here for you.</p>
-        <p>GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?</p>
-      </div>
-      </div>
-    </div>
-    <div class="mdl-cell mdl-cell--12-col">
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
-        <h3>Women Tech Makers</h3>
-        <p>Are you a women developer seeking refuge in a tech community? We're right here for you.</p>
-        <p>GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?</p>
-      </div>
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone" style="background: url('/images/wtm01.jpg') center / cover;"> 
-        <div class="triangle mdl-layout--large-screen-only" style="-webkit-transform: rotate(180deg); float: left;"></div>
-      </div>
-      </div>
     </div>
   </div>
   <style type="text/css">
@@ -171,17 +168,33 @@
     float: right;
   }
   .mdl-cell {
-    height: 300px;
+    min-height: 300px;
   }
   .mdl-grid , .mdl-cell {
     padding: 0 !important;
     margin: 0 !important;
   }
+  .row1 , .row2 , .row3 , .row4 {
+    display: flex;
+    -webkit-display: flex;
+    width: 100%;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  .home-card {
+    margin: 0px auto;
+    width: 75%;
+    min-width: 380px;
+  }
+  .row-head {
+    padding: 16px;
+    color: white;
+  }
   </style>
-</div>
 
 
-        </div>
+
+        
         <!--Footer-->
         <footer class="mdl-mega-footer">
   <div class="mdl-mega-footer__top-section">
@@ -218,7 +231,6 @@
       <img src="/images/logo-name.png" style="width: 200px;"><br/>
       <span>© 2016</span> GDG Chennai</div><br/>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="http://www.skript.com">| By Skript</a></li>
         <li><a href="https://github.com/skript/gdgchennai">Github</a></li>
       </ul>
     </div>
@@ -227,6 +239,16 @@
 
       </main>
     </div>
+
+    <style>
+    .mdl-layout__header {
+      background: white;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      color: #ddd;
+    }
+    </style>
     <script src="/js/material.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>

@@ -2,14 +2,45 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+	<div class="post-header ">
+		<span itemprop="name headline" class="mdl-typography--display-2" style="padding: 20px; display: block; color: rgba(255,255,255,0.87);"> {{ page.title }} </span>
   </div>
-
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--c`olored share">
+		<i class="material-icons">share</i>
+	</button>
+  <div class="post-card mdl-card mdl-shadow--4dp mdl-card-border">
+	  <div class="mdl-card__supporting-text mdl-card--border" itemprop="articleBody" >
+	    {{ content }}    
+	  </div>
+	  <div class="mdl-card__actions">
+    	<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  	</div>
+	</div>
 </article>
+
+<style type="text/css">
+	.post-header {
+		width: 100%;
+		background-color: darkblue;
+		color: white;
+		max-height: 192px;
+		display: block;
+		height: 192px;
+	}
+	.post-card {
+		min-width: 425px;
+		max-width: 1024px;
+		width: 66.6%;
+		margin: 0px auto;
+		position: relative;
+		top: -64px;
+	}
+	.share {
+		position: absolute;
+		right: 0;
+    margin: -28px 50px 0 0
+	}
+	.image-header {
+		background: url('');
+	}
+</style>
