@@ -2,7 +2,7 @@
 <html itempscope itemprop='http://schema.org/WebPage'>
   {% include head.html %}
   <body>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <div class="gdg-header mdl-layout mdl-js-layout">
       <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall" >
         <div class="mdl-layout__header-row">
           <!-- Icon -->
@@ -12,19 +12,17 @@
           <!-- Navigation -->
           <nav class="mdl-navigation mdl-layout--large-screen-only" itemscope itemprop='http://schema.org/SiteNavigationElement'>
             <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/about" >About</a>
-            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/portfolio" >Portfolio</a> 
-            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/post" >Articles</a>
-            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/profiles" >Profiles</a>
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/blog" >Posts</a> 
+            <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/contact" >Contact</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         <span class="mdl-layout-title"><img src="/images/logo-name.png" style="width: 200px;"></span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="/about">About</a>
+          <a class="mdl-navigation__link" href="/blog">Posts</a>
+          <a class="mdl-navigation__link" href="contact">Contact</a>
         </nav>
       </div>
       <!--Banner-->
@@ -55,9 +53,12 @@
     .mdl-layout__header {
       background: white;
     }
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {
+    .gdg-header .mdl-layout__header,
+    .gdg-header .mdl-layout__drawer-button {
       color: #ddd;
+    }
+    .mdl-layout__header-row {
+      padding: 0 20px;
     }
     </style>
     <script src="/js/material.min.js"></script>

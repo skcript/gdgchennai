@@ -6,8 +6,8 @@ The official website of Google Developers Group Chennai.
 More about Google Developer Groups [here](https://developers.google.com/groups/).
 
 ### Libraries And Codes used
-1. [Material Design Light](getmdl.io)
-2. [Jekyll](jekyllrb.com)
+1. [Material Design Light](https://getmdl.io)
+2. [Jekyll](https://jekyllrb.com)
 3. [Gallery.css](https://github.com/benschwarz/gallery-css)
 4. [Web Starter Kit](https://developers.google.com/web/tools/starter-kit/)
 5. [Konami.js](https://github.com/snaptortoise/konami-js)

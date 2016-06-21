@@ -1,17 +1,20 @@
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
+    <img src="/images/logo-name.png" style="width: 200px; margin: -16px;">
     <ul class="mdl-mini-footer__link-list">
-      <li><a href="https://github.com/skript/gdgchennai">Source</a></li>
-      <li><a href="https://developers.google.com/groups/">GDG Groups</a></li>
-      <li><a href="https://plus.google.com/+Gdgchennai">Google+</a></li>
-      <li><a href="https://www.facebook.com/gdgchennai">Facebook</a></li>
-      <li><a href="https://twitter.com/#!/GTUGChennai">Twitter</a></li>
+      <li>© {{ site.time | date: '%Y' }}</li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Terms</a></li>
     </ul>
-  </div>
-  <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">
-      <!--<span>© {{ site.time | date: '%Y' }}</span> -->
-      <img src="/images/logo-name.png" style="width: 200px; margin: -16px 16px;">
     </div>
-  </div>
+    <div class="mdl-mini-footer__right-section">
+      <a class="mdl-mini-footer__social-btn"  href="https://github.com/skript/gdgchennai"><img src=""></a>
+      <a class="mdl-mini-footer__social-btn" href="https://www.facebook.com/gdgchennai"><img src=""></a>
+      <a class="mdl-mini-footer__social-btn" href="https://plus.google.com/+Gdgchennai"><img src=""></a>
+    </div>
 </footer>
+<style type="text/css">
+  .mdl-mini-footer__social-btn {
+    margin: 4px;
+  }
+</style>
