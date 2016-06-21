@@ -1,4 +1,19 @@
 ---
 layout: default
 ---
-<p>Go to homepage</p>
+<script type="text/javascript" src="/js/konami.js"></script>
+<div class="wrapper">
+	<div class="mdl-typography--display-3-color-contrast">404 Page Not Found</div>
+	<div class="mdl-typography--title"><p>Go to Homepage | Or perform the Konami Code</p>
+	</div>
+</div>
+<style type="text/css">
+	.wrapper {
+		background-color: #455a64;
+		padding: 16px;
+		height: 100%;
+	}
+</style>
+<script type="text/javascript">
+	var easter_egg = new Konami('{{ site.url }}');
+</script>
