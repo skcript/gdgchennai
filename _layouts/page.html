@@ -5,11 +5,13 @@ layout: default
 	<div class="post-header ">
 		<span itemprop="name headline" class="mdl-typography--display-2" style="padding: 20px; display: block; color: rgba(255,255,255,0.87);"> {{ page.title }} </span>
   </div>
-  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored share">
+  <button type="button" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored share">
 		<i class="material-icons">share</i>
+
 	</button>
+	{% include sharedialog.html %}
   <div class="post-card mdl-card mdl-shadow--4dp mdl-card-border">
-	  <div class="mdl-card--border" itemprop="articleBody" style="padding: 16px;">
+	  <div class="mdl-typography--body-2-color-contrast mdl-card--border" itemprop="articleBody" style="padding: 16px;">
 	    {{ content }}    
 	  </div>
 	  <div class="mdl-card__actions">
@@ -21,7 +23,7 @@ layout: default
 <style type="text/css">
 	.post-header {
 		width: 100%;
-		background-color: darkblue;
+		background-color: #455a64;
 		color: white;
 		max-height: 192px;
 		display: block;
