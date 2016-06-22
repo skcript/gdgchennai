@@ -1,14 +1,14 @@
 <dialog class="mdl-dialog">
   <div>
     <div class="mdl-typography--headline-color-contrast">Share</div>
-    <a href="https://facebook.com" class="mdl-button mdl-js-button mdl-button--fab" style="background: #3b5998;     margin: 8px">
-      <i class="material-icons">share</i>
+    <a href="https://facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--fab" style="background: #3b5998; margin: 8px">
+      <img src="/images/facebook.svg" >
     </a>
-    <a href="https://plus.google.com" class="mdl-button mdl-js-button mdl-button--fab " style="background: #d34836;     margin: 8px">
-      <i class="material-icons">share</i>
+    <a href="https://plus.google.com/share?url={{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--fab " style="background: #d34836; margin: 8px">
+      <img src="/images/gplus.svg" >
     </a>
-    <a href="https://twitter.com" class="mdl-button mdl-js-button mdl-button--fab " style="background: #00aced;     margin: 8px">
-      <i class="material-icons">share</i>
+    <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.url }}&#GDGChennai" target="_blank" class="mdl-button mdl-js-button mdl-button--fab " style="background: #00aced; margin: 8px">
+      <img src="/images/twitter.svg" >
     </a>  
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-typography--subhead-color-contrast">Copy Link</div>
