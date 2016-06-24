@@ -1,24 +1,24 @@
 <dialog class="mdl-dialog">
-  <div>
-    <div class="mdl-typography--headline-color-contrast">Share</div>
-    <a href="https://facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--fab" style="background: #3b5998; margin: 8px">
+  <div class="mdl-typography--headline-color-contrast">Share</div>
+  <div style="display: flex; justify-content: center;">
+    <a href="https://facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" style="background: #3b5998; margin: 8px">
       <img src="/images/facebook.svg" >
     </a>
-    <a href="https://plus.google.com/share?url={{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--fab " style="background: #d34836; margin: 8px">
+    <a href="https://plus.google.com/share?url={{ page.url }}" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" style="background: #d34836; margin: 8px">
       <img src="/images/gplus.svg" >
     </a>
-    <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.url }}&#GDGChennai" target="_blank" class="mdl-button mdl-js-button mdl-button--fab " style="background: #00aced; margin: 8px">
+    <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.url }}&#GDGChennai" target="_blank" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" style="background: #00aced; margin: 8px">
       <img src="/images/twitter.svg" >
-    </a>  
-    <div class="mdl-layout-spacer"></div>
-    <div class="mdl-typography--subhead-color-contrast">Copy Link</div>
-    <div class="mdl-textfield mdl-js-textfield">
-      <input onClick="this.select();" class="mdl-textfield__input" type="text" id="copylink" value="{{ page.url }}">
-    </div>
+    </a>
+  </div>  
+  <div class="mdl-layout-spacer" style="height: 1rem;"></div>
+  <div class="mdl-typography--subhead-color-contrast">Copy Link</div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input onClick="this.select();" class="mdl-textfield__input" type="text" id="copylink" value="{{ page.url }}">
   </div>
   <div class="mdl-dialog__actions">
     <button type="button" class="mdl-button close">OK</button>
-  </div>
+  </div> 
 </dialog>
 
 <script>
