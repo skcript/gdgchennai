@@ -55,7 +55,7 @@ Then, setup the local [Developer Environment](#setting-up-developer-environment)
  - `news` - lists the blog pages from the `_posts` directory
 
 ### Libraries And Codes used
-1. [Material Design Light](https://getmdl.io)
+1. [Material Design Lite](https://getmdl.io)
 2. [Jekyll](https://jekyllrb.com)
 3. [Gallery.css](https://github.com/benschwarz/gallery-css)
 4. [Web Starter Kit](https://developers.google.com/web/tools/starter-kit/)

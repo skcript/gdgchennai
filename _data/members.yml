@@ -1,0 +1,20 @@
+- name: Karthik K
+  github: imkarthikk
+  photo: /images/karthik.jpg
+  description: Co-founded <a href="http://www.skcript.com/" target="_blank">Skcript</a>, Editor-in-chief <a href="http://www.the4cast.com" target="_blank">4CAST</a>, Manager of GDG Chennai, takes privacy issues seriously, Steve Jobs follower.
+
+- name: Swaathi Kakarla
+  github: swaathi
+  photo: /images/swaathi.jpg
+  description: Co-founder <a href="http://www.skcript.com/" target="_blank">Skcript</a> | Blogger @ <a href="http://www.the4cast.com" target="_blank">4CAST</a> | Co-Organizer GDG Chennai | Admires Einstein and Tesla | One Amazing Love | Jobs and Musk Fan
+
+- name: Jeyanthan I
+  github: 
+  photo: /images/jeyanthan.jpg
+  description: Agnostic Sapiosexual Netizen | FOSS Enthusiast | Part time freelancer | Tech Addict | A Collabee | Leads Google Developers Group, Chennai | Committed to WWW
+
+- name: Varun Raj
+  github: varun-raj
+  photo: /images/varunraj.jpg
+  description: Geek | Google Fan boy | Android enthusiast | Web Developer | Internet Addict | Hard code programmer
+

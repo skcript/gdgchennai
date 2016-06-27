@@ -9,50 +9,19 @@ permalink: /about/
 
 <h3>Our team</h3>
 <div class="mdl-grid">
-<div class="mdl-cell mdl-cell--3-col">
-<div class="mdl-card" style="width: 200px;">
-  <div class="mdl-card__title">
-    Karthik K
-  </div>
-  <img src="/images/karthik.jpg" width="128" style="margin: 0px auto;">
-  <div class="mdl-card__supporting-text mdl-card--border">
-    Co-founded <a href="http://www.skcript.com/" target="_blank">Skcript</a>, Editor-in-chief <a href="http://www.the4cast.com" target="_blank">4CAST</a>, Manager of GDG Chennai, takes privacy issues seriously, Steve Jobs follower.
-  </div>
-</div>
-</div>
-<div class="mdl-cell mdl-cell--3-col">
-<div class="mdl-card" style="width: 200px;">
-  <div class="mdl-card__title">
-    Swaathi K
-  </div>
-  <img src="/images/swaathi.jpg" width="128" style="margin: 0px auto;">
-  <div class="mdl-card__supporting-text mdl-card--border">
-    Co-founder <a href="http://www.skcript.com/" target="_blank">Skcript</a> | Blogger @ <a href="http://www.the4cast.com" target="_blank">4CAST</a> | Co-Organizer GDG Chennai | Admires Einstein and Tesla | One Amazing Love | Jobs and Musk Fan
-  </div>
-</div>
-</div>
-<div class="mdl-cell mdl-cell--3-col">
-<div class="mdl-card" style="width: 200px;">
-  <div class="mdl-card__title">
-    Jeyanathan I
-  </div>
-  <img src="/images/jeyanthan.jpg" width="128" style="margin: 0px auto;">
-  <div class="mdl-card__supporting-text mdl-card--border">
-    Agnostic Sapiosexual Netizen | FOSS Enthusiast | Part time freelancer | Tech Addict | A Collabee | Leads Google Developers Group, Chennai | Committed to WWW
-  </div>
-</div>
-</div>
-<div class="mdl-cell mdl-cell--3-col">
-<div class="mdl-card" style="width: 200px;">
-  <div class="mdl-card__title">
-    Varun Raj
-  </div>
-  <img src="/images/varunraj.jpg" width="128" style="margin: 0px auto;">
-  <div class="mdl-card__supporting-text mdl-card--border">
-    Geek | Google Fan boy | Android enthusiast | Web Developer | Internet Addict | Hard code programmer
-  </div>
-</div>
-</div>
+  {% for member in site.data.members %} 
+    <div class="mdl-cell mdl-cell--3-col">
+      <div class="mdl-card" style="width: 200px;">
+        <div class="mdl-card__title">
+          {{ member.name }}
+        </div>
+        <img src="{{ member.photo }}" width="128" style="margin: 0px auto;">
+        <div class="mdl-card__supporting-text mdl-card--border">
+          {{ member.description }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 <h3>We'd love to help you</h3>
