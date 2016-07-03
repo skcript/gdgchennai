@@ -1,0 +1,44 @@
+---
+layout: default
+title: Posts
+permalink: /posts/
+---
+<div class="post-header ">
+    <span itemprop="name headline" class="mdl-typography--display-2" style="padding: 20px; display: block; color: rgba(255,255,255,0.87);"> {{ page.title }} </span>
+</div>
+<div class="post-grid mdl-grid">
+	{% for post in site.data.allposts %}
+		<div class="mdl-cell mdl-cell--6-col">
+			<a class="mdl-card mdl-shadow--2dp mdl-js-button mdl-js-ripple-effect" href="{{ post.link }}" style="background-color: #{{ post.color }}">
+        <div class="mdl-card__media">
+          <img src="{{ post.image }}" class="home-card-img">
+        </div>
+        <div class="mdl-card__supporting-text mdl-card--border">
+          <span class="mdl-typography--title"> {{ post.title }} </span>
+          <p class="mdl-typography--body-1-force-preferred-font"> {{ post.description }} </p>
+        </div>
+      </a>
+		</div>
+	{% endfor %}
+</div>
+<style type="text/css">
+  .post-header {
+    width: 100%;
+    background-color: #455a64;
+    color: white;
+    max-height: 192px;
+    display: block;
+    height: 192px;
+    position: absolute;
+  }
+  .post-grid {
+    margin: 128px auto;
+    max-width: 960px;
+  }
+  .post-grid a {
+    margin: 0px auto;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+  }
+  </style>
