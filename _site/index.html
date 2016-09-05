@@ -23,10 +23,17 @@
   <!--Slider CSS Gallery.css-->
   <link rel="stylesheet" type="text/css" href="/css/slider.min.css">
   <link rel="stylesheet" type="text/css" href="/css/slider-theme.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!--Web App Manifest-->
+  <link rel="manifest" href="/manifest.json">
 </head>
 
-<body>
-    <div class="gdg-header mdl-layout mdl-js-layout">
+  <body>
+    <!--<div style="width: 100%; height: 0; position: absolute; z-index: 10; background: #606094; transition: all .4s ease-in-out; display: flex;" class="">
+      <div class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>-->
+    <div class="mdl-layout mdl-js-layout">
       
       <!-- Header Start-->
 <header itemscope itemprop="http://schema.org/WPHeader" class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall" >
@@ -53,45 +60,45 @@
 </div>
 <!--Header End-->
 
-
       <main class="mdl-layout__content">
-        
-        <div class="main-grid mdl-grid mdl-grid--no-spacing">
+      
+      <div class="main-grid mdl-grid mdl-grid--no-spacing">
   <div class="row1 mdl-grid--no-spacing">
     <div class="mdl-cell mdl-cell--12-col">
       <div class="gallery items-3">
         <div id="item-1" class="control-operator"></div>
         <div id="item-2" class="control-operator"></div>
         <div id="item-3" class="control-operator"></div>
-
         <figure class="item">
-          <a class="mdl-js-button mdl-js-ripple-effect" href="https://docs.google.com/forms/d/17uXt_H0mvO7qor0AaiYaEhqvyRJTK_gRJ6zF1p2qCnQ/viewform" style="background: url('https://developer.android.com/images/distribute/hero-carousel-djit.jpg') center / cover; ">
+          <span style="background: url('https://developer.android.com/images/distribute/hero-carousel-djit.jpg') center / cover; ">
             <div class="mdl-cell--6-col banner-wrap">
               <div class="mdl-typography--display-2 banner-title">Join Us</div>
-              <div class="mdl-typography--subhead-color-contrast banner-text">Google Developers Group is a community of developers who are interested in Google's technologies and products. Are you one of those ? Come join us. 
-              </div> 
+              <div class="mdl-typography--subhead-color-contrast banner-text">Google Developers Group is a community of developers who are interested in Google's technologies and products. Are you one of those ? Come join us.
+              <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://docs.google.com/forms/d/17uXt_H0mvO7qor0AaiYaEhqvyRJTK_gRJ6zF1p2qCnQ/viewform">Join Now</a>
+              </div>
             </div>
-          </a>
+          </span>
         </figure>
-
         <figure class="item">
-          <a class="mdl-js-button mdl-js-ripple-effect" href="#" style="background: url('/images/slide-3.jpg') center / cover; box-shadow: inset 0 0 0 500px rgba(0,0,0,.54);">
+          <span style="background: url('/images/slide-3.jpg') center / cover; box-shadow: inset 0 0 0 500px rgba(0,0,0,.54);">
             <div class="mdl-cell--6-col banner-wrap">
               <div class="mdl-typography--display-2 banner-title">Meetups and Conferences</div>
-              <div class="mdl-typography--subhead-color-contrast banner-text">Join with like-minded developers of the locality to discuss, interact and developed together through meetups and conferences.</div> 
+              <div class="mdl-typography--subhead-color-contrast banner-text">Join with like-minded developers of the locality to discuss, interact and developed together through meetups and conferences.
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Learn More</a>
+              </div>
             </div>
-          </a>          
+          </span>
         </figure>
-
         <figure class="item">
-          <a class="mdl-js-button mdl-js-ripple-effect" href="#" style="background: url('/images/startup-photos.jpg') center / cover; box-shadow: inset 0 0 0 500px rgba(0,0,0,.54);">
+          <span style="background: url('/images/startup-photos.jpg') center / cover; box-shadow: inset 0 0 0 500px rgba(0,0,0,.54);">
             <div class="mdl-cell--6-col banner-wrap">
               <div class="mdl-typography--display-2 banner-title">Empowering Women</div>
-              <div class="mdl-typography--subhead-color-contrast banner-text">GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?</div> 
+              <div class="mdl-typography--subhead-color-contrast banner-text">GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Learn More</a>
+              </div>
             </div>
-          </a>
+          </span>
         </figure>
-
         <div class="controls">
           <a href="#item-1" class="control-button">•</a>
           <a href="#item-2" class="control-button">•</a>
@@ -99,7 +106,7 @@
         </div>
       </div>
     </div>
-  </div>  
+  </div>
   <div class="row2 mdl-grid--no-spacing">
     <div class="mdl-cell--12-col">
       <div class="mdl-typography--headline-color-contrast row-head">Events</div>
@@ -139,92 +146,29 @@
     </div>
   </div>
   <div class="row3 mdl-grid--no-spacing">
-      <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url('/images/wtm01.jpg') center / cover; padding: 0px !important"> 
-      </div>
-      <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="padding: 2vw;">
-        <div class="mdl-typography--display-3-color-contrast">Women TechMakers</div>
-        <div class="mdl-typography--subhead-color-contrast">Are you a women developer seeking refuge in a tech community? We're right here for you. GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?</div><br/>
-        <a class="mdl-button " href="#">Learn More</a>
-      </div>
+    <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url('/images/wtm01.jpg') center / cover; padding: 0px !important">
+    </div>
+    <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="padding: 2vw;">
+      <div class="mdl-typography--display-3-color-contrast">Women TechMakers</div>
+      <div class="mdl-typography--subhead-color-contrast">Are you a women developer seeking refuge in a tech community? We're right here for you. GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you excited to meet the fellow women techmakers?</div><br/>
+      <a class="mdl-button " href="#">Learn More</a>
+    </div>
   </div>
   <div class="row4 mdl-grid--no-spacing">
-      <div class="mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="padding: 2vw;">
-        <div class="mdl-typography--display-3-color-contrast">GDG Women</div>
-        <div class="mdl-typography--subhead-color-contrast">GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you a women develoepr seeking refuge in a tech community? We're right here for you.</div><br/>
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Learn More</a>
-      </div>
-      <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url('/images/home-stream.jpg') center / cover; padding: 0px !important"> 
-      </div>
+    <div class="mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="padding: 2vw;">
+      <div class="mdl-typography--display-3-color-contrast">GDG Women</div>
+      <div class="mdl-typography--subhead-color-contrast">GDG Chennai has the most enthusiastic and vibrant women community. Last few years' activities specific to Women Developers and Women Entrepreneurs have proved the same. Are you a women develoepr seeking refuge in a tech community? We're right here for you.</div><br/>
+      <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">Learn More</a>
+    </div>
+    <div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="background: url('/images/home-stream.jpg') center / cover; padding: 0px !important">
+    </div>
   </div>
 </div>
-<style type="text/css">
-  .mdl-cell {
-    min-height: 300px;
-  }
-  .mdl-grid , .mdl-cell {
-    margin: 0 !important;
-  }
-  .row1 , .row2 , .row3 , .row4 {
-    display: flex;
-    -webkit-display: flex;
-    width: 100%;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-  }
-  .home-card {
-    margin: 0px auto;
-    text-decoration: none;
-    margin-bottom: 24px;
-    width: 90%;
-  }
-  .home-card-img {
-    width: 100%; 
-    margin: 0px auto; 
-    display: block;
-  }
-  .row-head {
-    padding: 2vw;
-    color: white;
-  }
-  .row2 {
-    background: #00BCD4;
-    padding: 2vw;
-  }
-  .row3 {
-    min-height: 30vw;
-    background: #009688;
-    color: white;
-  }
-  .row4 {
-    min-height: 30vw;
-    background: #FF8A80;
-  }
-  .banner-wrap {
-    justify-content: center;
-    padding-left: 5vw;
-    flex-direction: column;                                                                                         
-    display: flex;
-    text-align: left;
-  }
-  .item a {
-     display: flex; 
-     height: 100%; 
-     text-decoration: none; 
-     color: white;
-  }
-  .banner-text {
-    margin-top: 1rem;
-  }
-</style>
-
-
-
-
-        
-        <!--Footer-->
-        <footer class="mdl-mini-footer" itemscope itemprop="http://schema.org/WPFooter" >
+      
+      <!--Footer-->
+      <footer class="mdl-mini-footer" itemscope itemprop="http://schema.org/WPFooter" >
   <div class="mdl-mini-footer__left-section">
-    <img src="/images/logo-name.png" style="width: 200px; margin: -16px;">
+    <img src="/images/logo-light.png" style="width: 200px; margin: -16px;">
     <ul class="mdl-mini-footer__link-list">
       <li>© 2016</li>
       <li><a href="https://developers.google.com/groups/guidelines/" target="_blank">Terms</a></li>
@@ -248,41 +192,10 @@
 </footer>
       </main>
     </div>
-
-    <style>
-    .mdl-layout__header {
-      background: white;
-    }
-    .gdg-header .mdl-layout__header,
-    .gdg-header .mdl-layout__drawer-button {
-      color: #ddd;
-    }
-    .mdl-layout__header-row {
-      padding: 0 20px;
-    }
-    .share {
-      right: 0;
-      z-index: 2;
-    }
-     @media screen and (min-width: 479px)  {
-    .share { 
-      position: fixed;
-      margin: 0 16px -84px 0; }
-    }
-    @media screen and (min-width: 760px)  {
-    .share { 
-      position: absolute;
-      margin: -28px 40px 0 0;  }
-    }
-    @media screen and (min-width: 1024px)  {
-    .share { 
-      position: absolute;
-      margin: -28px 50px 0 0;     }
-    }
-    </style>
     <script src="/js/material.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
-    <script>
+    <!--Uncomment below line to include Google analytics script -- >
+    <!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -291,6 +204,6 @@
   ga('create', 'UA-42775480-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script> -->
   </body>
 </html>

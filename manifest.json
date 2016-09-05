@@ -1,0 +1,13 @@
+{
+  "short_name": "GDG Chennai",
+  "name": "GDG Chennai",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "250x250"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone"
+}
