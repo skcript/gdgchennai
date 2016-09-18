@@ -1,13 +1,10 @@
 header {
 display: block !important;
 }
-.mdl-cell {
-min-height: 300px;
-}
 .mdl-grid , .mdl-cell {
 margin: 0 !important;
 }
-.row1 , .row2 , .row3 , .row4 {
+.row1 , .row2 , .row3 , .row4, .row5 {
 display: flex;
 -webkit-display: flex;
 width: 100%;
@@ -15,10 +12,10 @@ width: 100%;
 flex-flow: row wrap;
 }
 .home-card {
-margin: 0px auto;
+margin: 16px;
 text-decoration: none;
 margin-bottom: 24px;
-width: 90%;
+width: 300px;
 }
 .home-card-img {
 width: 100%;
@@ -26,21 +23,22 @@ margin: 0px auto;
 display: block;
 }
 .row-head {
-padding: 2vw;
+padding: 0 0 15px 0;
 color: white;
+text-align: center;
 }
 .row2 {
 background: #00BCD4;
 padding: 2vw;
 }
 .row3 {
-min-height: 30vw;
-background: #009688;
-color: white;
+min-height: 450px;
+background: #ebeff2;
 }
 .row4 {
-min-height: 30vw;
-background: #FF8A80;
+min-height: 500px;
+background: #455a64;
+color: white;
 }
 .banner-wrap {
 justify-content: center;
@@ -54,6 +52,11 @@ display: flex;
 height: 100%;
 text-decoration: none;
 color: white;
+}
+.item .mdl-button, .main-grid .mdl-button {
+  color: white;
+  font-weight: 600;
+  padding: 2px !important;
 }
 .banner-text {
 margin-top: 1rem;
@@ -118,20 +121,23 @@ nav a:hover {
   max-height: 192px;
   display: block;
   height: 192px;
+  position: relative;
 }
 .post-card {
+  width: 100%;
+  position: initial;
+}
+.content {
+  width: 66%;
   min-width: 425px;
-  max-width: 1024px;
-  width: 66.6%;
   margin: 0px auto;
-  position: relative;
-  top: -64px;
 }
 .image-header {
   background: url('/images/fallback-2.jpg') center / cover;
+  box-shadow: inset 0 0 0 100px rgba(0,0,0,0.27);
 }
 .share {
   position: absolute;
   right: 0;
-    margin: -28px 50px 0 0;
+  margin: -28px 50px 0 0;
 }
