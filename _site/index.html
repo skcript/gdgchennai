@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
   <title>GDG Chennai</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit This line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
@@ -18,19 +21,48 @@
 	<!--Material Icons-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<!--Fonts-->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
 
   <!--Slider CSS Gallery.css-->
   <link rel="stylesheet" type="text/css" href="/css/slider.min.css">
   <link rel="stylesheet" type="text/css" href="/css/slider-theme.css">
 
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+
   <!--Web App Manifest-->
   <link rel="manifest" href="/manifest.json">
+
+  <!-- Add to homescreen - Chrome -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="GDG Chennai">
+  <meta name="theme-color" content="#455A64">
+
+  <!-- Add to homescreen - Safari-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GDG Chennai">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#455A64">
+
+  <!-- Tile - Win8 -->
+  <meta name="msapplication-TileColor" content="#FFF">
+  <meta name="msapplication-navbutton-color" content="#455A64">
+
+  <script type="text/javascript" src="/js/pjax-standalone.min.js"></script>
+  <script type="text/javascript">
+    pjax.connect({
+      'beforeSend': function(e) {
+        document.getElementById('main').classList.add('hide');
+      },
+      'complete': function(e) {
+        document.getElementById('main').classList.remove('hide');
+      },
+      'parseJS': true
+      });
+  </script>
 </head>
 
   <body>
-    <!--<div style="width: 100%; height: 0; position: absolute; z-index: 10; background: #606094; transition: all .4s ease-in-out; display: flex;" class="">
+    <!--<div class='loader' style="width: 100%; height: 0; position: absolute; z-index: 10; background: #606094; transition: all .4s ease-in-out; display: flex;" >
       <div class="mdl-spinner mdl-js-spinner is-active"></div>
     </div>-->
     <div class="mdl-layout mdl-js-layout">
@@ -39,14 +71,15 @@
 <header itemscope itemprop="http://schema.org/WPHeader" class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--waterfall" >
   <div class="mdl-layout__header-row">
     <!-- Icon -->
-    <a class="mdl-layout-icon" href="/"><img src="/images/logo-name.png" style="width: 200px;"></a>
+    <a class="mdl-layout-icon" href="/" data-pjax="main"><img src="/images/logo-name.png" style="width: 200px;"></a>
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation -->
     <nav class="mdl-navigation mdl-layout--large-screen-only" itemscope itemprop='http://schema.org/SiteNavigationElement'>
-      <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/about" >About</a>
-      <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/posts" >Posts</a> 
-      <a class="mdl-button mdl-js-button mdl-js-ripple-effect "  href="/contact" >Contact</a>
+      <a class="mdl-button mdl-js-button mdl-js-ripple-effect " data-pjax="main" href="/about" >About</a>
+      <a class="mdl-button mdl-js-button mdl-js-ripple-effect " data-pjax="main" href="/posts" >Posts</a> 
+      <a class="mdl-button mdl-js-button mdl-js-ripple-effect " data-pjax="main" href="/events" >Events</a>
+      <a class="mdl-button mdl-js-button mdl-js-ripple-effect " data-pjax="main" href="/contact" >Contact</a>
     </nav>
   </div>
 </header>
@@ -60,18 +93,18 @@
 </div>
 <!--Header End-->
 
-      <main class="mdl-layout__content">
+      <main class="mdl-layout__content" id="main">
       
       <div class="main-grid mdl-grid mdl-grid--no-spacing">
 
   <div class="row1 mdl-grid--no-spacing">
     <div class="mdl-cell mdl-cell--12-col">
-      <div class="gallery items-3">
+      <div class="gallery autoplay items-3">
         <div id="item-1" class="control-operator"></div>
         <div id="item-2" class="control-operator"></div>
         <div id="item-3" class="control-operator"></div>
         <figure class="item">
-          <span style="background: url('https://developer.android.com/images/distribute/hero-carousel-djit.jpg') center / cover; ">
+          <span style="background: url('/images/android-developer.jpg') center / cover; ">
             <div class="mdl-cell--6-col banner-wrap">
               <div class="mdl-typography--display-2 banner-title">Join Us</div>
               <div class="mdl-typography--subhead-color-contrast banner-text">Google Developers Group is a community of developers who are interested in Google's technologies and products. Are you one of those ? Come join us.
@@ -112,12 +145,27 @@
     </div>
   </div>
 
+  <div class="strip mdl-grid--no-spacing">
+    <div class="mdl-cell--4-col">
+    <div class="icon"><i class="material-icons">person</i></div>
+    <div class="mdl-typography--headline">300+ Members</div>
+    </div>
+    <div class="mdl-cell--4-col">
+    <div class="icon"><i class="material-icons">event</i></div>
+    <div class="mdl-typography--headline">50+ Events</div>
+    </div>
+    <div class="mdl-cell--4-col">
+    <div class="icon"><i class="material-icons">person_pin_circle</i></div>
+    <div class="mdl-typography--headline">10 Organizers</div>
+    </div>
+  </div>
+
   <div class="row2 mdl-grid--no-spacing">
     <div class="mdl-cell--12-col">
       <div class="mdl-typography--display-1 row-head">Events</div>
       <div class="mdl-typography--title-color-contrast row-head">Events bring the whole community together at a single place</div>
     </div>
-    <div class="mdl-cell mdl-cell--12-col" style="display: flex; padding: 0 3vw; justify-content: center;">
+    <div class="mdl-cell mdl-cell--12-col" style="display: flex; padding: 0 3vw; justify-content: center; flex-wrap: wrap;">
       <a class="home-card mdl-card mdl-shadow--2dp mdl-js-button mdl-js-ripple-effect" href="#">
         <div class="mdl-card__media">
           <img src="/images/conferences-thumb.jpg" class="home-card-img">
@@ -164,7 +212,7 @@
 
   <div class="row4 mdl-grid--no-spacing">
     <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-      <div class="mdl-card" style="background: url('http://devfest.gdgchennai.com/img/sprites/logos.svg') center / cover no-repeat; background-size: 400px; background-position: 0px -270px; width: 400px;" ></div>
+      <div class="mdl-card" style="background: url('/images/devfest-logos.svg') center / cover no-repeat; background-size: 400px; background-position: 0px -270px; width: 400px;" ></div>
     </div>
     <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style=" padding: 0 54px 0 0  !important; display: flex; flex-direction: column; justify-content: center;">
       <div class="mdl-typography--display-2-color-contrast">The biggest Google related event in the country</div>
@@ -173,13 +221,13 @@
     </div>
   </div>
 
-  <div class="row5 mdl-grid--no-spacing" style="background-color: #5692f8; min-height: 200px">
+
+  <div class="row5 mdl-grid--no-spacing" style="background-color: #5692f8; min-height: 250px">
     <div class="mdl-cell mdl-cell--12-col" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 4vw; text-align: center">
       <div class="mdl-typography--display-1-color-contrast" style="color: white; opacity: 0.87">We'd love to hear from you</div>
-      <div class="mdl-typography--body-1-color-contrast" style="color: white; font-size: 16px;">
+      <div class="mdl-typography--body-1-color-contrast" style="color: white; font-size: 16px; padding: 16px 0;">
       We are constantly looking for developers who're ready to go one step further to create something new and revolutionary. If you are a developer who's looking for some help from the best community on the planet, just fill up this form, and we'll spartk the conversation.
       </div>
-      <br/>
       <button class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://karthikk1.typeform.com/to/DtVj3J">Contact Us</button>
     </div>
   </div>

@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="post-header ">
-		<span itemprop="name headline" class="mdl-typography--display-2" style="padding: 20px; display: block; color: rgba(255,255,255,0.87);"> {{ page.title }} </span>
+		<span itemprop="name headline" class="mdl-typography--display-2" style="padding: 4vw; display: block; color: rgba(255,255,255,0.87);"> {{ page.title }} </span>
   </div>
   <button type="button" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-js-ripple-effect share" id="share">
 		<i class="material-icons">share</i>
@@ -11,7 +11,7 @@ layout: default
 	<div class="mdl-tooltip" for="share">Share</div>
 	{% include sharedialog.html %}
   <div class="post-card mdl-card mdl-shadow--4dp mdl-card-border">
-	  <div class="mdl-typography--body-2-color-contrast mdl-card--border" itemprop="articleBody" style="padding: 16px;">
+	  <div class="content" itemprop="articleBody" style="padding: 16px;">
 	    {{ content }}    
 	  </div>
 	  <div class="mdl-card__actions">

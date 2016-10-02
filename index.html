@@ -5,12 +5,12 @@ layout: default
 
   <div class="row1 mdl-grid--no-spacing">
     <div class="mdl-cell mdl-cell--12-col">
-      <div class="gallery items-3">
+      <div class="gallery autoplay items-3">
         <div id="item-1" class="control-operator"></div>
         <div id="item-2" class="control-operator"></div>
         <div id="item-3" class="control-operator"></div>
         <figure class="item">
-          <span style="background: url('https://developer.android.com/images/distribute/hero-carousel-djit.jpg') center / cover; ">
+          <span style="background: url('/images/android-developer.jpg') center / cover; ">
             <div class="mdl-cell--6-col banner-wrap">
               <div class="mdl-typography--display-2 banner-title">Join Us</div>
               <div class="mdl-typography--subhead-color-contrast banner-text">Google Developers Group is a community of developers who are interested in Google's technologies and products. Are you one of those ? Come join us.
@@ -51,12 +51,27 @@ layout: default
     </div>
   </div>
 
+  <div class="strip mdl-grid--no-spacing">
+    <div class="mdl-cell--4-col">
+    <div class="icon"><i class="material-icons">person</i></div>
+    <div class="mdl-typography--headline">300+ Members</div>
+    </div>
+    <div class="mdl-cell--4-col">
+    <div class="icon"><i class="material-icons">event</i></div>
+    <div class="mdl-typography--headline">50+ Events</div>
+    </div>
+    <div class="mdl-cell--4-col">
+    <div class="icon"><i class="material-icons">person_pin_circle</i></div>
+    <div class="mdl-typography--headline">10 Organizers</div>
+    </div>
+  </div>
+
   <div class="row2 mdl-grid--no-spacing">
     <div class="mdl-cell--12-col">
       <div class="mdl-typography--display-1 row-head">Events</div>
       <div class="mdl-typography--title-color-contrast row-head">Events bring the whole community together at a single place</div>
     </div>
-    <div class="mdl-cell mdl-cell--12-col" style="display: flex; padding: 0 3vw; justify-content: center;">
+    <div class="mdl-cell mdl-cell--12-col" style="display: flex; padding: 0 3vw; justify-content: center; flex-wrap: wrap;">
       <a class="home-card mdl-card mdl-shadow--2dp mdl-js-button mdl-js-ripple-effect" href="#">
         <div class="mdl-card__media">
           <img src="/images/conferences-thumb.jpg" class="home-card-img">
@@ -103,7 +118,7 @@ layout: default
 
   <div class="row4 mdl-grid--no-spacing">
     <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style="padding: 2vw; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-      <div class="mdl-card" style="background: url('http://devfest.gdgchennai.com/img/sprites/logos.svg') center / cover no-repeat; background-size: 400px; background-position: 0px -270px; width: 400px;" ></div>
+      <div class="mdl-card" style="background: url('/images/devfest-logos.svg') center / cover no-repeat; background-size: 400px; background-position: 0px -270px; width: 400px;" ></div>
     </div>
     <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone" style=" padding: 0 54px 0 0  !important; display: flex; flex-direction: column; justify-content: center;">
       <div class="mdl-typography--display-2-color-contrast">The biggest Google related event in the country</div>
@@ -112,13 +127,13 @@ layout: default
     </div>
   </div>
 
-  <div class="row5 mdl-grid--no-spacing" style="background-color: #5692f8; min-height: 200px">
+
+  <div class="row5 mdl-grid--no-spacing" style="background-color: #5692f8; min-height: 250px">
     <div class="mdl-cell mdl-cell--12-col" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 4vw; text-align: center">
       <div class="mdl-typography--display-1-color-contrast" style="color: white; opacity: 0.87">We'd love to hear from you</div>
-      <div class="mdl-typography--body-1-color-contrast" style="color: white; font-size: 16px;">
+      <div class="mdl-typography--body-1-color-contrast" style="color: white; font-size: 16px; padding: 16px 0;">
       We are constantly looking for developers who're ready to go one step further to create something new and revolutionary. If you are a developer who's looking for some help from the best community on the planet, just fill up this form, and we'll spartk the conversation.
       </div>
-      <br/>
       <button class="mdl-button mdl-js-button mdl-js-ripple-effect" href="{{ site.data.links.typeform }}">Contact Us</button>
     </div>
   </div>

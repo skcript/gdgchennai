@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/material.min.css">
 </head>
 <body>
-	<div class="wrapper mdl-card mdl-card--shadow-8	dp">
+	<div class="wrapper mdl-card mdl-shadow--8dp">
 		<div class="mdl-typography--display-2-color-contrast" >404 Page Not Found</div>
 		<div class="mdl-typography--title-color-contrast" style="padding-top: 12px;">Go to <a href="{{site.url}}" style="text-decoration: none;">Homepage</a>
 		</div>
@@ -18,12 +18,13 @@
 		body {
 			background-color: #455a64;
 		}
-		.wrapper {
+		.wrapper {    
 			align-items: center;
-			justify-content: center;
-			width: 66%;
-			min-width: 425px;
-			
+    		justify-content: center;
+		    width: 66%;
+		    min-width: 400px;
+		    text-align: center;
+		    padding: 16px;
 		}
 		body {
 			display: flex;
@@ -32,7 +33,7 @@
 		}
 	</style>
 	<script type="text/javascript">
-		var easter_egg = new Konami('{{ site.url }}');
+		var easter_egg = new Konami('/');
 	</script>
 </body>
 </html>
