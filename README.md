@@ -1,6 +1,7 @@
 # GDG Chennai
+![alt text][logo]
 
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/973265/16330372/5f9771f6-3a06-11e6-8d5e-5415ad51faaa.png" /></p>
+[logo]: /images/logo-name.png "GDG Chennai Logo"
 
 The site uses [Jekyll](http://jekyllrb.com), a static site generator. GitHub Pages, where the site is hosted, natively supports Jekyll so every time someone pushes to this repository, the website will be built and updated. For hosting it yourself, see [Setting up a local copy of the website](#contribution-guidelines).
 
@@ -30,6 +31,7 @@ Then, setup the local [Developer Environment](#setting-up-developer-environment)
 
 **Note 2:** on case-insensitive file systems like on Windows and Mac OS X you'll run into redirect loops for some URLs. The workaround is to disable redirects locally by removing the `gems: jekyll-redirect-from` entry from `_config.yml`.
 
+
 ### Setting up Developer Environment
 
 **Dependencies**
@@ -51,3 +53,10 @@ Then, setup the local [Developer Environment](#setting-up-developer-environment)
  - `files` - stores binary files used in pages
  - `images` - stores the images used in pages
  - `news` - lists the blog pages from the `_posts` directory
+
+### Libraries And Codes used
+1. [Material Design Lite](https://getmdl.io)
+2. [Jekyll](https://jekyllrb.com)
+3. [Gallery.css](https://github.com/benschwarz/gallery-css)
+4. [Web Starter Kit](https://developers.google.com/web/tools/starter-kit/)
+5. [Konami.js](https://github.com/snaptortoise/konami-js)

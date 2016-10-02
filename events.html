@@ -1,0 +1,49 @@
+---
+layout: page
+title: Events
+permalink: /events/
+---
+
+<div>
+	<div class="mdl-typography--display-1-color-contrast" style="font-weight: 300; padding-top: 8px">Past Events</div>
+	<ul class="event-list mdl-list">
+	{% for event in site.data.events %}
+		<li class="mdl-list__item mdl-list__item--three-line">
+			<a class="mdl-list__item-primary-content" href="{{event.link}}">
+				<i class="material-icons mdl-list__item-icon" style="background-color: #{{event.color}}">event</i>
+				<span class="mdl-typography--headline">{{ event.title }}</span>
+				<span class="mdl-list__item-text-body" style="padding-top: 6px; display: -webkit-box;">
+					<span class="mdl-list__item-secondary-info">{{ event.date }} | Chennai</span>
+					<br>
+					<span class="mdl-typography--subhead">{{ event.description }}</span>
+				</span>
+			</a>
+			<span class="mdl-list__item-secondary-content">
+				<a class="mdl-list__item-secondary-action" href="#" style="color: black"><i class="material-icons">chevron_right</i></a>
+			</span>
+		</li>
+		<hr>
+	{% endfor %}
+	</ul>
+</div>
+<style type="text/css">
+.event-list .mdl-list__item {
+	min-height: 128px;
+	cursor: auto;
+    text-decoration: none;
+}
+.event-list .mdl-list__item-icon {
+	height: 64px !important;
+	width: 64px !important;
+	background: #ffb659;
+	border-radius: 50%;
+	text-align: center;
+    font-size: 36px !important;
+    line-height: 64px;
+    color: white !important;
+}
+.mdl-list__item--three-line .mdl-list__item-primary-content {
+	height: 84px !important;
+	color: rgb(66,66,66);
+}
+</style>

@@ -1,0 +1,59 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <title>{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!--Material Lite Libraries-->
+  <link rel="stylesheet" href="/css/material.min.css">
+
+	<!--Material Icons-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+
+  <!--Slider CSS Gallery.css-->
+  <link rel="stylesheet" type="text/css" href="/css/slider.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/slider-theme.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <!--Web App Manifest-->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Add to homescreen - Chrome -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="GDG Chennai">
+  <meta name="theme-color" content="#455A64">
+
+  <!-- Add to homescreen - Safari-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GDG Chennai">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#455A64">
+
+  <!-- Tile - Win8 -->
+  <meta name="msapplication-TileColor" content="#FFF">
+  <meta name="msapplication-navbutton-color" content="#455A64">
+
+  <script type="text/javascript" src="/js/pjax-standalone.min.js"></script>
+  <script type="text/javascript">
+    pjax.connect({
+      'beforeSend': function(e) {
+        document.getElementById('main').classList.add('hide');
+      },
+      'complete': function(e) {
+        document.getElementById('main').classList.remove('hide');
+      },
+      'parseJS': true
+      });
+  </script>
+</head>

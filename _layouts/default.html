@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html itemscope itemprop='http://schema.org/WebPage'>
+  {% include head.html %}
+  <body>
+    <!--<div class='loader' style="width: 100%; height: 0; position: absolute; z-index: 10; background: #606094; transition: all .4s ease-in-out; display: flex;" >
+      <div class="mdl-spinner mdl-js-spinner is-active"></div>
+    </div>-->
+    <div class="mdl-layout mdl-js-layout">
+      
+      {% include header.html %}
+      <main class="mdl-layout__content" id="main">
+      
+      {{ content }}
+      
+      <!--Footer-->
+      {% include footer.html %}
+      </main>
+    </div>
+    <script src="/js/material.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <!--Uncomment below line to include Google analytics script -- >
+    <!-- {% include analytics.html %} -->
+  </body>
+</html>

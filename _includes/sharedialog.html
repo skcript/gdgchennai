@@ -1,0 +1,69 @@
+<dialog class="mdl-dialog">
+  <div class="mdl-typography--headline-color-contrast">Share</div>
+  <ul class="mdl-list">
+    <li class="mdl-list__item">
+      <a class="mdl-list__item-primary-content" href="https://facebook.com/sharer/sharer.php?u={{ page.url }}" target="_blank" >
+        <img src="/images/facebook.svg" class="mdl-list__item-icon">
+        Facebook
+      </a>
+    </li>
+    <li class="mdl-list__item">
+      <a class="mdl-list__item-primary-content"  href="https://plus.google.com/share?url={{ page.url }}" target="_blank" >
+        <img src="/images/gplus.svg" class="mdl-list__item-icon">
+        Google+
+      </a>
+    </li>
+    <li class="mdl-list__item">
+      <a class="mdl-list__item-primary-content" href="https://twitter.com/share?text={{ page.title }}&url={{ page.url }}&#GDGChennai" target="_blank" >
+        <img src="/images/twitter.svg" class="mdl-list__item-icon">
+        Twitter
+      </a>
+    </li>
+  </ul>
+  <div class="mdl-layout-spacer" style="height: 1rem;"></div>
+  <div class="mdl-typography--subhead-color-contrast">Copy Link</div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input onClick="this.select();" class="mdl-textfield__input" type="text" id="copylink" value="{{ page.url }}">
+    <div class="mdl-typography--caption-color-contrast" style="padding-top: 6px;">Ctrl-C to copy</div>
+  </div>
+  <div class="mdl-dialog__actions">
+    <button type="button" class="mdl-button close">OK</button>
+  </div> 
+</dialog>
+
+<script>
+  var dialog = document.querySelector('dialog');
+  var showModalButton = document.querySelector('.share');
+  if (! dialog.showModal) {
+    dialogPolyfill.registerDialog(dialog);
+  }
+  showModalButton.addEventListener('click', function() {
+    dialog.showModal();
+  });
+  dialog.querySelector('.close').addEventListener('click', function() {
+    dialog.close();
+  });
+</script>
+
+<style type="text/css">
+  .mdl-dialog {
+    border-radius:  4px;
+  }
+  .mdl-dialog a{
+    text-decoration: none;
+    color: #333;
+    height: 48px;
+    font-weight: 400;
+  }
+  .mdl-dialog a:hover {
+    background-color: rgba(0,0,0,0.1);
+  }
+  .mdl-dialog a img {
+    background: #757575;
+    border-radius: 2px;
+    margin: 0 16px !important;
+  }
+  .mdl-list__item {
+    padding: 0px !important;
+  }
+</style>

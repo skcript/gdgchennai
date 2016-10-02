@@ -1,0 +1,40 @@
+---
+
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ site.title }} | Page Not Found </title>
+	<script type="text/javascript" src="/js/konami.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/material.min.css">
+</head>
+<body>
+	<div class="wrapper mdl-card mdl-shadow--8dp">
+		<div class="mdl-typography--display-2-color-contrast" >404 Page Not Found</div>
+		<div class="mdl-typography--title-color-contrast" style="padding-top: 12px;">Go to <a href="{{site.url}}" style="text-decoration: none;">Homepage</a>
+		</div>
+	</div>
+	<style type="text/css">
+		body {
+			background-color: #455a64;
+		}
+		.wrapper {    
+			align-items: center;
+    		justify-content: center;
+		    width: 66%;
+		    min-width: 400px;
+		    text-align: center;
+		    padding: 16px;
+		}
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+	<script type="text/javascript">
+		var easter_egg = new Konami('/');
+	</script>
+</body>
+</html>
+
